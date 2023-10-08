@@ -42,6 +42,6 @@ export const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     marginTop: 36,
-    marginBottom: 32
+    marginBottom: 32,
   }
 })
