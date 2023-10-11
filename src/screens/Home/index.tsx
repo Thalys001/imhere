@@ -10,6 +10,9 @@ export function Home() {
   const [participantName, setParticipantName] = useState('');
 
   function handleParticipantAdd() {
+    if (!participantName.trim()) {
+      return Alert.alert("Erro", "Digite um nome.")
+    }
     if (participants.includes(participantName)) {
       return Alert.alert("Participante existe", "Já existe um participante com este nome.")
     }
